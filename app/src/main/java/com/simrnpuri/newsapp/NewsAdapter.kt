@@ -1,4 +1,4 @@
-package com.example.newsapp
+package com.simrnpuri.newsapp
 
 import android.content.Context
 import android.content.Intent
@@ -41,3 +41,4 @@ class NewsAdapter(val context: Context, val articles: List<Article>) : RecyclerV
     }
 
 }
+
