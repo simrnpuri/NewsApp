@@ -1,5 +1,5 @@
 package com.simrnpuri.newsapp.network
-import com.simrnpuri.newsapp.data.models.News
+import com.simrnpuri.newsapp.data.domain.News
 import retrofit2.Call
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
