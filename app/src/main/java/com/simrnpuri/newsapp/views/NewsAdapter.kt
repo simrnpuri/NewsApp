@@ -1,4 +1,4 @@
-package com.simrnpuri.newsapp.ui
+package com.simrnpuri.newsapp.views
 
 import android.content.Context
 import android.content.Intent
@@ -10,8 +10,8 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.simrnpuri.newsapp.data.models.Article
 import com.simrnpuri.newsapp.R
+import com.simrnpuri.newsapp.data.domain.Article
 
 class NewsAdapter(val context: Context, val articles: List<Article>) : RecyclerView.Adapter<NewsAdapter.ArtileViewHolder>(){
 

@@ -7,6 +7,9 @@
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7b89a3f6ee587c6f896cad3a62626da2/jetified-stacklayoutmanager-1.0.5/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7b89a3f6ee587c6f896cad3a62626da2/jetified-stacklayoutmanager-1.0.5/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7b89a3f6ee587c6f896cad3a62626da2/jetified-stacklayoutmanager-1.0.5/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0f759b5b76f55db5fea429f6fe254ae9/jetified-stacklayoutmanager-1.0.5/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0f759b5b76f55db5fea429f6fe254ae9/jetified-stacklayoutmanager-1.0.5/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0f759b5b76f55db5fea429f6fe254ae9/jetified-stacklayoutmanager-1.0.5/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.littlemango/stacklayoutmanager/1.0.5/b99fc4ac9f33c5b9a99ba7b2256d426f300e1f25/stacklayoutmanager-1.0.5-javadoc.jar!/" />

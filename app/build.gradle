@@ -8,7 +8,7 @@ android {
     buildToolsVersion "30.0.2"
 
     defaultConfig {
-        applicationId "com.example.newsapp"
+        applicationId "com.simrnpuri.newsapp"
         minSdkVersion 21
         targetSdkVersion 29
         versionCode 1
@@ -46,6 +46,8 @@ dependencies {
     annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
     implementation "androidx.cardview:cardview:1.0.0"
     implementation 'com.littlemango:stacklayoutmanager:1.0.5'
+    implementation "androidx.activity:activity-ktx:1.2.3"
+    implementation "androidx.fragment:fragment-ktx:1.3.5"
 
     //Lifecycle
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
