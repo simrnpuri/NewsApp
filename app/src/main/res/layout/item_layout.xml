@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:elevation="8dp"
     android:layout_margin="16dp">
 
@@ -38,6 +39,12 @@
             style="@style/TextAppearance.AppCompat.Body1"
             android:maxLines="2"
             android:text="textView"/>
+        <ImageView
+            android:id="@+id/fave_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:src="@drawable/fav_selector" />
 
     </LinearLayout>
 </androidx.cardview.widget.CardView>

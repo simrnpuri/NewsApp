@@ -1,11 +1,9 @@
 package com.simrnpuri.newsapp.viewmodel
 
 import android.os.Bundle
-import androidx.lifecycle.AbstractSavedStateViewModelFactory
-import androidx.lifecycle.SavedStateHandle
-import androidx.lifecycle.ViewModel
-import androidx.lifecycle.viewModelScope
+import androidx.lifecycle.*
 import androidx.savedstate.SavedStateRegistryOwner
+import com.simrnpuri.newsapp.data.MainTab
 import com.simrnpuri.newsapp.data.database.model.LocalArticle
 import com.simrnpuri.newsapp.repository.NewsRepository
 import kotlinx.coroutines.launch
@@ -15,6 +13,14 @@ class NewsViewModel(
     handle: SavedStateHandle
 ): ViewModel() {
 
+    private val mainTab: MainTab = handle.get("main_tab") ?: MainTab.ALL
+    val newsList
+        get() = repository.newsListLiveData.map {
+            it.filter { pokemonInfo ->
+                mainTab == MainTab.ALL || pokemonInfo.isFav == true
+            }
+        }
+
     init {
         viewModelScope.launch {
             repository.loadArticles()
@@ -23,7 +29,7 @@ class NewsViewModel(
 
     fun onFaveClick(article: LocalArticle) {
         viewModelScope.launch {
-            article.isFav = !article.isFav
+            article.isFav = !(article.isFav?:false)
             repository.updateArticle(
                 article
             )

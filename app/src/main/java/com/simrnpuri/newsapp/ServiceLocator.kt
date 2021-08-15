@@ -17,7 +17,7 @@ class ServiceLocator(applicationContext: Context) {
         .build()
 
     val apiService: NewsInterface = retrofit.create(NewsInterface::class.java)
-    val pokemonDatabase = Room.databaseBuilder(
+    val articleDatabase = Room.databaseBuilder(
         applicationContext,
         ArticleDatabse::class.java,
         "articles"
